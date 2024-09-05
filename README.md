@@ -50,3 +50,12 @@ Commands:
   run    Run a Jupyter notebook.
   start  Start Jupyter notebook server.
 ```
+
+## UV to the max 
+
+Fun fact, you don't have to install this tool beforehand. You can just run it with `uv`: 
+
+```
+uv run --with nbuv python -m nbuv
+```
+
