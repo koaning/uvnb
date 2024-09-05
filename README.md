@@ -14,9 +14,9 @@ uv pip install uvnb
 
 ## Usage 
 
-The goal of `uvnb` is to allow you to run Jupyter notebooks with dependencies via UV by leveraging the script metadata. By doing this, you can just define your dependencies in the notebook metadata and quickly run it. 
+The goal of `uvnb` is to allow you to run Jupyter notebooks with dependencies via UV by leveraging the script metadata. By doing this, you can just define your dependencies in the notebook as a metadata comment and quickly run it. 
 
-This tool assumes that you have metadata in the first cell that looks like this: 
+This tool assumes that you have metadata in the first cell, maybe something that looks like this: 
 
 ```python
 # /// script
@@ -35,7 +35,7 @@ data = resp.json()
 pprint([(k, v["title"]) for k, v in data.items()][:10])
 ```
 
-From here you can run the notebook, or start a Jupyter server via the command line. 
+To learn more about this syntax, you can check [this PEP](https://packaging.python.org/en/latest/specifications/inline-script-metadata/). From here you can run the notebook, or start a Jupyter server via the command line. 
 
 ```
 python -m uvnb
