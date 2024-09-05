@@ -56,6 +56,6 @@ Commands:
 Fun fact, you don't have to install this tool beforehand. You can just run it with `uv`: 
 
 ```
-uv run --with nbuv python -m nbuv
+uv run --with uvnb python -m uvnb
 ```
 
