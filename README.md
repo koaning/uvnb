@@ -2,7 +2,7 @@
 
 ### uvnb
 
-> A utility to run UV against Jupyter notebooks.
+> Have UV deal with all your Jupyter deps.
 
 ## Quickstart 
 
