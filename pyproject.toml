@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uvnb"
+version = "0.1.0"
+description = "A utility to run UV against Jupyter notebooks"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click", "uv"
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/koaning/uvnb"
+Repository = "https://github.com/koaning/uvnb.git"
+
+[project.scripts]
+uvnb = "uvnb.__main__:main"
