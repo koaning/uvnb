@@ -26,4 +26,4 @@ jobs:
     - name: Install Base Dependencies
       run: uv pip install -e .
     - name: Demo
-      run: python -m uvnb run demo.ipynb
+      run: uv run python -m uvnb run demo.ipynb
